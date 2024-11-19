@@ -30,6 +30,14 @@ public class calculadora {
             case 2 ->{
                 resultado = num1 - num2;
             }
+
+            case 3 ->{
+                resultado = num1 * num2;
+            }
+
+            case 4 ->{
+                resultado = num1 / num2;
+            }
         }
         System.out.println("El resultado de la operación es: " + resultado);
     }
