@@ -23,27 +23,17 @@ public class calculadora {
 
             input = new Scanner(System.in).nextInt();
 
-            double resultado = 1;
+            double resultado = 0;
 
             switch (input) {
-                case 1 -> {
-                    resultado = num1 + num2;
-                }
-
-                case 2 -> {
-                    resultado = num1 - num2;
-                }
-
-                case 3 -> {
-                    resultado = num1 * num2;
-                }
-
-                case 4 -> {
-                    resultado = num1 / num2;
-                }
+                case 1 -> resultado = num1 + num2;
+                case 2 -> resultado = num1 - num2;
+                case 3 -> resultado = num1 * num2;
+                case 4 -> resultado = num1 / num2;
             }
-            System.out.println("El resultado de la operación es: " + resultado);
-            String esperar = new Scanner(System.in).nextLine();
+            String respuesta = (input == 5) ? "Calculadora apagada" : "El resultado de la operación es:\n" + resultado;
+            System.out.println(respuesta+"\n\nPulse cualquier tecla para continuar...");
+            new Scanner(System.in).nextLine();
         }
     }
 }
