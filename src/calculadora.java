@@ -14,14 +14,23 @@ public class calculadora {
 
         int input = new Scanner(System.in).nextInt();
 
-        System.out.println("Dime el primer numero");
+        System.out.println("Dime el primer número");
         double num1 = new Scanner(System.in).nextInt();
 
-        System.out.println("Dime el segundo numemro");
+        System.out.println("Dime el segundo número");
         double num2 = new Scanner(System.in).nextInt();
 
         double resultado = 1;
 
+        switch (input){
+            case 1 ->{
+                resultado = num1 + num2;
+            }
 
+            case 2 ->{
+                resultado = num1 - num2;
+            }
+        }
+        System.out.println("El resultado de la operación es: " + resultado);
     }
 }
